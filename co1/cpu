@@ -36,10 +36,6 @@ class CPU {
     CPU(double price) {
         this.price = price;
     }
- CPU(double price) {
-        this.price = price;
-    }
-
     void displayCPUInfo() {
         System.out.println("CPU Price: $" + price);
     }
