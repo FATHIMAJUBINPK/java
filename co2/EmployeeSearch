@@ -86,3 +86,29 @@ b. If not found after checking all, display "not found" message.
 
 End the program.
 
+output:
+
+Enter number of employees: 3
+
+Enter details for employee 1:
+Enter Employee Number: 101
+Enter Employee Name: John Doe
+Enter Employee Salary: 55000
+
+Enter details for employee 2:
+Enter Employee Number: 102
+Enter Employee Name: Jane Smith
+Enter Employee Salary: 62000
+
+Enter details for employee 3:
+Enter Employee Number: 103
+Enter Employee Name: Alice Brown
+Enter Employee Salary: 47000
+
+Enter Employee Number to search: 102
+
+Employee found:
+Employee Number: 102
+Employee Name: Jane Smith
+Employee Salary: 62000
+
