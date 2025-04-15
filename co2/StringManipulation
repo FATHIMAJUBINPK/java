@@ -131,5 +131,35 @@ End the program.
 
 
 
+output:
+Enter the first string: Hello
+Enter the second string: World
+
+Original Strings:
+str1: Hello
+str2: World
+Concatenated String: Hello World
+Are str1 and str2 equal? false
+Enter starting index for substring: 6
+Substring starting from index 6: World
+Uppercase String: HELLO WORLD
+
+Enter a string to manipulate with StringBuffer: Welcome
+Original StringBuffer:
+strBuffer: Welcome
+Enter a string to append: to Java
+After appending: Welcometo Java
+Enter index to insert a string: 7
+Enter string to insert: Programming
+After inserting: WelcomeProgramming to Java
+Enter start index to replace: 8
+Enter end index to replace: 18
+Enter replacement string: Coding
+After replacing: WelcomeCoding to Java
+Enter start index to delete: 7
+Enter end index to delete: 13
+After deleting: Welcome to Java
+Final String: Welcome to Java
+
 
 
