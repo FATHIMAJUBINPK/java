@@ -1,0 +1,96 @@
+import java.util.Scanner;
+
+public class StringManipulation {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.print("Enter the first string: ");
+        String str1 = new String(scanner.nextLine());
+
+        System.out.print("Enter the second string: ");
+        String str2 = new String(scanner.nextLine());
+
+        System.out.println("\nOriginal Strings:");
+        System.out.println("str1: " + str1);
+        System.out.println("str2: " + str2);
+
+
+        String concatenatedStr = str1 + " " + str2;
+        System.out.println("Concatenated String: " + concatenatedStr);
+
+
+        System.out.println("Are str1 and str2 equal? " + str1.equals(str2));
+
+
+        System.out.print("Enter starting index for substring: ");
+        int startIndex = scanner.nextInt();
+        if (startIndex >= 0 && startIndex < concatenatedStr.length()) {
+            String substring = concatenatedStr.substring(startIndex);
+            System.out.println("Substring starting from index " + startIndex + ": " + substring);
+        } else {
+            System.out.println("Invalid index.");
+        }
+
+
+        String upperCaseStr = concatenatedStr.toUpperCase();
+        System.out.println("Uppercase String: " + upperCaseStr);
+
+
+        System.out.print("\nEnter a string to manipulate with StringBuffer: ");
+        scanner.nextLine();
+        StringBuffer strBuffer = new StringBuffer(scanner.nextLine());
+
+        System.out.println("\nOriginal StringBuffer:");
+        System.out.println("strBuffer: " + strBuffer);
+
+
+        System.out.print("Enter a string to append: ");
+        String appendStr = scanner.nextLine();
+        strBuffer.append(appendStr);
+        System.out.println("After appending: " + strBuffer);
+
+
+        System.out.print("Enter index to insert a string: ");
+        int insertIndex = scanner.nextInt();
+        scanner.nextLine();
+        System.out.print("Enter string to insert: ");
+        String insertStr = scanner.nextLine();
+        if (insertIndex >= 0 && insertIndex <= strBuffer.length()) {
+            strBuffer.insert(insertIndex, insertStr);
+            System.out.println("After inserting: " + strBuffer);
+        } else {
+            System.out.println("Invalid index.");
+        }
+
+
+        strBuffer.reverse();
+        System.out.println("After reversing: " + strBuffer);
+
+
+        System.out.print("Enter start index to replace: ");
+        int startReplace = scanner.nextInt();
+        System.out.print("Enter end index to replace: ");
+        int endReplace = scanner.nextInt();
+        scanner.nextLine();
+        System.out.print("Enter replacement string: ");
+        String replaceStr = scanner.nextLine();
+        strBuffer.replace(startReplace, endReplace, replaceStr);
+        System.out.println("After replacing: " + strBuffer);
+
+
+        System.out.print("Enter start index to delete: ");
+        int startDelete = scanner.nextInt();
+        System.out.print("Enter end index to delete: ");
+        int endDelete = scanner.nextInt();
+        strBuffer.delete(startDelete, endDelete);
+        System.out.println("After deleting: " + strBuffer);
+
+        String finalStr = strBuffer.toString();
+        System.out.println("Final String: " + finalStr);
+
+
+        scanner.close();
+    }
+}
