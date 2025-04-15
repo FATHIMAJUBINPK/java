@@ -94,3 +94,42 @@ public class StringManipulation {
         scanner.close();
     }
 }
+
+
+
+algo:
+
+Start the program.
+
+Read two strings (str1 and str2) from the user.
+
+Display the original strings.
+
+Concatenate the strings and display the result.
+
+Compare the two strings and show whether they are equal.
+
+Read a starting index and display the substring from that index (if valid).
+
+Convert the concatenated string to uppercase and display it.
+
+Read a new string into a StringBuffer.
+
+Append another string to the buffer and display the result.
+
+Read an index and a string, insert the string at the given index (if valid), and display the result.
+
+Reverse the buffer and display it.
+
+Read start and end indices and a replacement string, then replace that range and display the result.
+
+Read start and end indices to delete a range of characters and display the result.
+
+Convert the buffer to a string and display the final result.
+
+End the program.
+
+
+
+
+
