@@ -10,3 +10,77 @@ Step 6: Write a display() method in Teacher to print all details.
 Step 7: In the main method, create an array of Teacher objects with sample data.
 Step 8: Use a loop to call the display() method for each teacher.
 Step 9: End.
+
+import java.util.Scanner;
+
+class Employee {
+    int empId;
+    String name;
+    double salary;
+    String address;
+
+    Employee(int empId, String name, double salary, String address) {
+        this.empId = empId;
+        this.name = name;
+        this.salary = salary;
+        this.address = address;
+    }
+}
+
+class Teacher extends Employee {
+    String department;
+    String subject;
+
+    Teacher(int empId, String name, double salary, String address, String department, String subject) {
+        super(empId, name, salary, address);
+        this.department = department;
+        this.subject = subject;
+    }
+
+    void display() {
+        System.out.println("ID: " + empId + ", Name: " + name + ", Salary: " + salary + ", Address: " + address + ", Department: " + department + ", Subject: " + subject);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number of teachers: ");
+        int n = sc.nextInt();
+        sc.nextLine();
+
+        Teacher[] teachers = new Teacher[n];
+
+        for (int i = 0; i < n; i++) {
+            System.out.println("Enter details for Teacher " + (i + 1) + ":");
+
+            System.out.print("ID: ");
+            int id = sc.nextInt();
+            sc.nextLine();
+
+            System.out.print("Name: ");
+            String name = sc.nextLine();
+
+            System.out.print("Salary: ");
+            double salary = sc.nextDouble();
+            sc.nextLine();
+
+            System.out.print("Address: ");
+            String address = sc.nextLine();
+
+            System.out.print("Department: ");
+            String dept = sc.nextLine();
+
+            System.out.print("Subject: ");
+            String subject = sc.nextLine();
+
+            teachers[i] = new Teacher(id, name, salary, address, dept, subject);
+        }
+
+        System.out.println("\nTeacher Details:");
+        for (Teacher t : teachers) {
+            t.display();
+        }
+
+        sc.close();
+    }
+}
