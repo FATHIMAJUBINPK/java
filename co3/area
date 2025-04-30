@@ -57,4 +57,25 @@ Enter the height of the triangle: 2
 Area of Triangle: 3.0
 
 algo:
+Start
+
+Input radius
+
+Calculate area of circle using formula: area = 3.14 × radius × radius
+
+Display area of circle
+
+Input length and breadth
+
+Calculate area of rectangle using formula: area = length × breadth
+
+Display area of rectangle
+
+Input base and height
+
+Calculate area of triangle using formula: area = 0.5 × base × height
+
+Display area of triangle
+
+End
 
