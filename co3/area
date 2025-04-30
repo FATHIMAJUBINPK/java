@@ -43,3 +43,18 @@ class Area {
         scanner.close();
     }
 }
+
+
+output
+
+Enter the radius of the circle: 2
+Area of Circle: 12.56
+Enter the length of the rectangle: 3
+Enter the breadth of the rectangle: 4
+Area of Rectangle: 12.0
+Enter the base of the triangle: 3
+Enter the height of the triangle: 2
+Area of Triangle: 3.0
+
+algo:
+
