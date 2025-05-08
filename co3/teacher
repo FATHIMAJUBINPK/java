@@ -84,3 +84,32 @@ class Teacher extends Employee {
         sc.close();
     }
 }
+output
+
+Enter number of teachers: 2
+Enter details for Teacher 1:
+ID: 01
+Name: sruthi
+Salary: ^Z
+[1]+  Stopped                 java Teacher
+[mca2410@Server java]$ java Teacher
+Enter number of teachers: 2
+Enter details for Teacher 1:
+ID: 01
+Name: shifa
+Salary: 150000
+Address: atholi
+Department: btech
+Subject: cs
+Enter details for Teacher 2:
+ID: 02
+Name: rinsiya
+Salary: 20000
+Address: koyassan
+Department: mca
+Subject: aos
+
+Teacher Details:
+ID: 1, Name: shifa, Salary: 150000.0, Address: atholi, Department: btech, Subject: cs
+ID: 2, Name: rinsiya, Salary: 20000.0, Address: koyassan, Department: mca, Subject: aos
+
